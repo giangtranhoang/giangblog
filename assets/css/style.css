@@ -33,7 +33,7 @@ body {
 }
 
 .navbar .logo {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     font-weight: bold;
     color: #ffffff; /* Chữ trắng cho logo trên nền xanh */
     text-decoration: none;
@@ -403,3 +403,4 @@ footer {
     object-fit: cover;
     display: block;
 }
+
