@@ -1,20 +1,25 @@
 :root {
+    /* Bảng màu chuyên nghiệp và hiện đại */
     --primary-color: #007bff;
     --secondary-color: #6c757d;
-    --background-color: #f8f9fa;
-    --text-color: #343a40;
+    --accent-color: #0056b3;
+    --background-color: #f0f2f5;
+    --text-color: #333333;
+    --light-text-color: #555555;
     --card-background: #ffffff;
-    --border-radius: 8px;
-    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border-color: #e0e0e0;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 body {
     font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -23,19 +28,23 @@ body {
     padding: 20px;
 }
 
+/* Header / Navbar */
 .navbar {
-    background: #1a56db; /* Màu xanh dương chuyên nghiệp */
+    background: var(--primary-color);
     box-shadow: var(--box-shadow);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar .logo {
-    font-size: 1.0rem;
-    font-weight: bold;
-    color: #ffffff; /* Chữ trắng cho logo trên nền xanh */
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -47,50 +56,67 @@ body {
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #e0e0e0; /* Chữ xám nhạt cho các liên kết */
+    color: rgba(255, 255, 255, 0.85);
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
+    padding: 5px 0;
 }
 
 .nav-links a:hover {
-    color: #ffffff; /* Chữ trắng khi hover */
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
+/* Hero Section (Trang chủ) */
 .hero-section {
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #007bff, #0056b3);
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     color: #fff;
     border-radius: var(--border-radius);
-    margin-top: 20px;
+    margin-top: 30px;
+    box-shadow: var(--box-shadow);
 }
 
 .hero-avatar {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
-    border: 5px solid #fff;
-    margin-bottom: 20px;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 25px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
+.hero-section p {
+    font-size: 1.15rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Featured Topics (Trang chủ) */
 .featured-topics {
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 0 40px;
 }
 
 .featured-topics h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--text-color);
+    font-weight: 700;
 }
 
 .topic-grid {
@@ -107,112 +133,196 @@ body {
     color: var(--text-color);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
 }
 
 .topic-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .topic-card img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
 }
 
 .topic-card h3 {
-    margin: 15px;
-    font-size: 1.25rem;
+    margin: 20px 15px;
+    font-size: 1.4rem;
+    color: var(--text-color);
 }
 
+/* Content Page General Styles */
 .content-page {
     background: var(--card-background);
     padding: 40px;
     border-radius: var(--border-radius);
-    margin-top: 20px;
+    margin-top: 30px;
     box-shadow: var(--box-shadow);
+    border: 1px solid var(--border-color);
 }
 
 .content-page h1 {
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
-.about-avatar {
-    display: block;
-    margin: 0 auto 30px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid #ddd;
+.content-page p {
+    color: var(--light-text-color);
+}
+
+/* About / Giới thiệu Page Specific Styles */
+.about-hero-banner {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+    max-height: 250px;
+    height: auto;
+    position: relative;
+}
+
+.about-hero-banner .full-width-banner {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
-.social-links {
+.profile-section {
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    z-index: 1;
+    margin-top: 50px; /* Đã sửa: Tăng khoảng cách trên cùng để không bị che */
+    padding-top: 50px;
+}
+
+.profile-avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    margin-bottom: 25px;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-info {
+    margin-top: 80px;
+}
+
+.profile-info h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.profile-titles {
+    font-style: italic;
+    color: var(--light-text-color);
+    margin-top: 8px;
+    line-height: 1.4;
+    font-size: 1.1rem;
+}
+
+.profile-section p {
+    margin-bottom: 1.5em;
+}
+
+.skills-section h2,
+.contact-section h2 {
+    text-align: left;
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.skills-list {
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-links a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
-.articles-grid {
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
 }
 
-.article-card {
-    background: #f4f4f4;
-    padding: 20px;
+.skills-list li {
+    background-color: var(--background-color);
+    padding: 18px;
     border-radius: var(--border-radius);
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-color);
+    border-left: 5px solid var(--primary-color);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.article-card a {
-    text-decoration: none;
+.skills-list li:hover {
+    background-color: #e0e7ff;
+    transform: translateY(-3px);
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+}
+
+.contact-section a {
     color: var(--primary-color);
+    text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: var(--secondary-color);
-    color: #fff;
-    margin-top: 40px;
+.contact-section a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
 }
 
-/* Các style cho trang bài viết và chuyên mục */
+/* Article Page Specific Styles (Chung cho các bài viết) */
 .article-page {
     line-height: 1.8;
 }
 
 .article-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 .article-meta {
     text-align: center;
     font-style: italic;
-    color: var(--secondary-color);
-    margin-bottom: 30px;
+    color: var(--light-text-color);
+    margin-bottom: 35px;
+    font-size: 0.95rem;
 }
 
 .article-image {
     width: 100%;
-    height: 350px;
+    max-height: 400px;
+    height: auto;
     object-fit: cover;
     border-radius: var(--border-radius);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    box-shadow: var(--box-shadow);
 }
 
 .article-section {
@@ -220,11 +330,19 @@ footer {
 }
 
 .article-section h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.article-section h3 {
+    font-size: 1.6rem;
     color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 5px;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .features-list {
@@ -234,91 +352,16 @@ footer {
 }
 
 .features-list li {
-    background: #e9ecef;
-    margin-bottom: 10px;
-    padding: 10px 15px;
-    border-left: 4px solid var(--primary-color);
-    border-radius: 4px;
-}
-
-/* Các style cho trang About */
-.profile-section {
-    position: relative;
-    text-align: center;
-    padding: 30px;
-    background: var(--card-background); /* Nền trắng cho phần profile */
+    background: var(--background-color);
+    margin-bottom: 12px;
+    padding: 12px 18px;
+    border-left: 5px solid var(--primary-color);
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    z-index: 1; /* Đảm bảo nằm trên banner */
-    margin-top: -100px; /* Di chuyển phần profile lên trên banner */
-    padding-top: 30px;
+    color: var(--text-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.profile-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.profile-avatar {
-    width: 150px; /* Tăng kích thước avatar */
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #fff; /* Border trắng làm nổi bật ảnh */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ cho avatar */
-    margin-bottom: 20px;
-}
-
-.profile-info {
-    margin-top: 15px;
-}
-
-.profile-info h1 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-.profile-titles {
-    font-style: italic;
-    color: var(--secondary-color);
-    margin-top: 5px;
-    line-height: 1.4;
-}
-
-.skills-section h2,
-.contact-section h2 {
-    text-align: left;
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 5px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.skills-list {
-    list-style: none;
-    padding: 0;
-}
-
-.skills-list li {
-    background-color: #e9ecef;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: var(--border-radius);
-    text-align: left;
-    font-weight: bold;
-}
-
-.contact-section a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Các style cho trang Tôn Giáo */
+/* Topic Columns (Chuyên mục Tôn Giáo, Kỹ Thuật, Phần Mềm) */
 .topic-columns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -331,15 +374,17 @@ footer {
     padding: 25px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    border: 1px solid var(--border-color);
 }
 
 .topic-column h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--primary-color);
     margin-top: 0;
     margin-bottom: 20px;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
     padding-bottom: 10px;
+    font-weight: 700;
 }
 
 .article-list {
@@ -348,59 +393,185 @@ footer {
 }
 
 .article-list li {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .article-list li a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--light-text-color);
     font-weight: normal;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
     display: block;
     padding: 5px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.article-list li a::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 1.2em;
+    line-height: 1;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .article-list li a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
     text-decoration: underline;
+    transform: translateX(5px);
 }
 
 .article-list .view-more {
     display: block;
     text-align: right;
-    margin-top: 15px;
+    margin-top: 20px;
     font-weight: bold;
     color: var(--secondary-color);
+    transition: color 0.3s ease;
+    padding-right: 0;
+}
+
+.article-list .view-more::before {
+    content: none;
 }
 
 .article-list .view-more:hover {
     color: var(--primary-color);
+    text-decoration: underline;
 }
 
-/* Style cho các banner */
+/* Các banner chung */
 .category-banner {
     width: 100%;
-    max-height: 250px;
+    max-height: 300px;
     height: auto;
     object-fit: cover;
     border-radius: var(--border-radius);
     margin-top: 30px;
     margin-bottom: 30px;
     box-shadow: var(--box-shadow);
+    border: 1px solid var(--border-color);
 }
 
-.about-hero-banner {
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: var(--primary-color);
+    color: #ffffff;
+    margin-top: 50px;
+    font-size: 0.95rem;
+    box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 0 10px 10px 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .featured-topics h2 {
+        font-size: 2rem;
+    }
+
+    .profile-info h1 {
+        font-size: 2.2rem;
+    }
+
+    .skills-section h2, .contact-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .article-title {
+        font-size: 2rem;
+    }
+
+    .article-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* Style cho khung nhúng PDF */
+
+.pdf-container {
     width: 100%;
-    overflow: hidden;
-    margin-top: 0;
-    max-height: 200px;
-    height: auto;
+    height: 800px; /* Chiều cao cố định, bạn có thể điều chỉnh */
+    margin: 0 auto;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    overflow: hidden; /* Đảm bảo không có thanh cuộn thừa */
+    box-shadow: var(--box-shadow);
 }
 
-.about-hero-banner .full-width-banner {
+.pdf-container iframe {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    display: block;
 }
 
+
+
+/* Styles cho phần QR Code */
+.qr-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-top: 30px; /* Khoảng cách với phần nội dung trên */
+    border: 1px solid var(--border-color);
+}
+
+.qr-section h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.qr-code-image {
+    width: 250px; /* Kích thước cố định cho QR code */
+    height: auto;
+    max-width: 100%; /* Đảm bảo co giãn trên màn hình nhỏ */
+    display: block;
+    margin: 0 auto 20px auto; /* Căn giữa và khoảng cách dưới */
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.qr-section p {
+    font-size: 1.1rem;
+    color: var(--light-text-color);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustment cho QR section */
+@media (max-width: 768px) {
+    .qr-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .qr-code-image {
+        width: 200px; /* Nhỏ hơn trên di động */
+    }
+}
