@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>git add, git commit, và git push... có ý nghĩa gì? - Giang Tran Hoang</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+    <img src="../assets/images/logo1.jpg" alt="Logo Header" class="logo-header">
+	</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li><a href="../about/gioithieu.html">Giới thiệu</a></li>
+                <li><a href="../tongiao/tongiao.html">Tôn giáo</a></li>
+                <li><a href="../kythuat/kythuat.html">Kỹ thuật</a></li>
+                <li><a href="ungdung.html">Ứng dụng</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container content-page article-page">
+        <article>
+            <h1 class="article-title">Các thao tác Git như git add, git commit, và git push... có ý nghĩa gì? </h1>
+            <p class="article-meta">Được đăng bởi **Giang Tran** vào ngày 16 tháng 9, 2024</p>
+            <img src="../assets/images/github1.jpg" alt="git add, git commit" class="article-image">
+            
+            <section class="article-section">
+                <h2>Dẫn nhập</h2>
+                <p>Các thao tác Git như git add, git commit, và git push... có y nghĩa gì? 
+Git là một hệ thống quản lý phiên bản (Version Control System - VCS) mạnh mẽ, giúp bạn theo dõi lịch sử thay đổi của code và các tệp tin trong một dự án. Ba lệnh bạn vừa hỏi là các lệnh cơ bản nhất để làm việc với Git, có ý nghĩa như sau:
+________________________________________
+</p>
+            </section>
+
+            <section class="article-section">
+                <h2>1. git add</h2>
+                <p>
+
+Lệnh git add có chức năng đưa các thay đổi vào khu vực chờ (staging area).<p>
+<p>
+•	Khi bạn tạo một tệp mới, sửa đổi một tệp có sẵn, hoặc xóa một tệp, Git sẽ biết rằng có thay đổi, nhưng nó chưa sẵn sàng để lưu lại.<p>
+<p>
+•	Lệnh git add giống như việc bạn chọn những tệp nào mà bạn muốn đưa vào bản lưu trữ kế tiếp.<p> <p>
+•	Ví dụ: git add . sẽ thêm tất cả các tệp đã thay đổi vào khu vực chờ, sẵn sàng cho bước tiếp theo.
+
+<h2>2. git commit</h2>
+
+Lệnh git commit có chức năng lưu lại các thay đổi của bạn vào lịch sử dự án. <p> <p>
+•	Đây là hành động chính để tạo ra một "bản ghi" (snapshot) về trạng thái hiện tại của dự án.<p><p>
+•	Mỗi commit là một cột mốc quan trọng, cho phép bạn dễ dàng quay trở lại trạng thái đó nếu cần.<p><p>
+•	Lệnh git commit -m "Mô tả" đi kèm với một tin nhắn mô tả ngắn gọn về những gì bạn đã làm. Điều này rất quan trọng để người khác (và cả chính bạn trong tương lai) hiểu được mục đích của lần thay đổi này.
+
+<h2>3.git push</h2>
+
+Lệnh git push có chức năng đồng bộ hóa các thay đổi từ máy tính của bạn lên GitHub.<p><p>
+•	Sau khi đã add và commit các thay đổi trên máy tính, chúng mới chỉ tồn tại ở kho lưu trữ cục bộ của bạn.<p><p>
+•	Lệnh git push sẽ gửi các commit này lên kho lưu trữ từ xa trên GitHub, giúp bạn lưu trữ dự án trực tuyến và chia sẻ nó với người khác.<p><p>
+•	Ngược lại, lệnh git pull dùng để tải các thay đổi mới từ GitHub về máy tính của bạn.<p><p>
+Tóm lại, quá trình làm việc cơ bản với Git là: Thay đổi -> git add (chọn tệp) -> git commit (tạo bản lưu) -> git push (đồng bộ lên GitHub).<p>
+
+  như thế: Sau khi chỉnh sửa xong, bạn dùng ba lệnh Git để đẩy các thay đổi lên kho lưu trữ trực tuyến:<p>
+<li>	git add .: Lệnh này thông báo cho Git rằng bạn muốn chuẩn bị tất cả các thay đổi để lưu lại.</li>
+<li>	git commit -m "Mô tả ngắn gọn về những thay đổi": Lệnh này tạo một bản ghi (commit) các thay đổi của bạn trên máy tính. Hãy nhớ viết một mô tả rõ ràng để bạn có thể dễ dàng theo dõi lại lịch sử.</li>
+<li>	git push origin main: Lệnh này sẽ gửi bản ghi đó từ máy tính của bạn lên GitHub, và hai nơi sẽ được đồng bộ hóa với nhau.</li>
+Bây giờ bạn đã có một quy trình làm việc chuẩn xác để quản lý dự án của mình trên GitHub. 
+
+<h2>4.Bước : Đẩy các thay đổi lên GitHub</h2>
+
+Sau khi bạn đã cập nhật tất cả các tệp, hãy mở Git Bash và chạy các lệnh sau để đồng bộ hóa các thay đổi lên GitHub:
+<li>1.	Thêm tất cả các thay đổi:</li>
+
+git add .
+<li>2.	Lưu lại (commit) các thay đổi:</li>
+
+git commit -m "mô tả những cái mới cập nhật"
+<li>3.	Đẩy lên GitHub:</li>
+git push origin main
+
+</p>
+                
+            </section>
+
+            
+        </article>
+    </main>
+
+    <footer>
+            <img src="../assets/images/logo2.jpg" alt="Logo Footer" class="logo-footer">
+<p>&copy; 2025 Giang Tran Hoang. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
