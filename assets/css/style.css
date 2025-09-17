@@ -554,7 +554,7 @@ footer {
 
 /* Styles cho logo mới */
 .navbar .logo img {
-    height: 80px; /* Tăng kích thước logo đầu trang */
+    height:50px; /* Tăng kích thước logo đầu trang */
     width: auto;
 }
 
