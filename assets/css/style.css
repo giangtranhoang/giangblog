@@ -548,3 +548,39 @@ footer {
 .article-content {
     margin-top: 40px;
 }
+
+/* Styles canh chinh cho logo đầu-chân */
+
+
+/* Styles cho logo mới */
+.navbar .logo img {
+    height: 80px; /* Tăng kích thước logo đầu trang */
+    width: auto;
+}
+
+footer {
+    display: flex; /* Dùng flexbox để căn chỉnh */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: flex-start; /* Căn lề trái */
+    text-align: left;
+    padding: 25px;
+    background: var(--primary-color);
+    color: #ffffff;
+    margin-top: 50px;
+    font-size: 0.95rem;
+    box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-footer {
+    height: 40px; /* Kích thước logo chân trang */
+    width: auto;
+    margin-right: 20px; /* Khoảng cách giữa logo và văn bản */
+}
+
+/* Ẩn chữ "Giang Tran Hoang" cũ */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0;
+}
