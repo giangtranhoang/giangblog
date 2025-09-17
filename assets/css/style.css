@@ -561,7 +561,7 @@ footer {
 footer {
     display: flex; /* Dùng flexbox để căn chỉnh */
     align-items: center; /* Căn giữa theo chiều dọc */
-    justify-content: flex-start; /* Căn lề trái */
+    justify-content: center; /* Căn giữa theo chiều ngang  */
     text-align: left;
     padding: 25px;
     background: var(--primary-color);
