@@ -1,342 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Tran Hoang Giang Simple Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="gioithieu-assets/css/main.css"
-    />
-    <link
-      rel="stylesheet"
-      href="gioithieu-assets/css/responsive.css"
-    />
-    <link
-      rel="icon"
-      href="gioithieu-assets/icons/ic-rocket.svg"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="container header__container">
-        <div class="header__column--left">
-          <div class="header__img"></div>
-
-          <div class="header__content--left">
-            <span class="header__title">
-              Hi, I'm <span>Tran Hoang Giang</span>
-            </span>
-            <p>
-              Lecturer, Network System Administrator and Website Developer
-              &nbsp;
-            </p>
-            <div class="header__badge_container">
-              <span class="badge">Creative</span>
-              <span class="badge">Dynamic</span>
-              <span class="badge">Professional</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="header__column--right">
-          <nav>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu - Trần Hoàng Giang</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="/manifest.json"><link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+</head>
+<body>
+    <header class="navbar">
+        <a href="../index.html" class="logo">
+	<img src="../assets/images/logo1.jpg" alt="Logo Header" class="logo-header">
+	</a>
+        <nav>
             <ul class="nav-links">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="gioithieu.html">About</a></li>
-              <li><a href="../tongiao/tongiao.html">Religion</a></li>
-              <li><a href="../kythuat/kythuat.html">Technology</a></li>
-              <li><a href="../ungdung/ungdung.html">Applications</a></li>
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="../tongiao/tongiao.html">Tôn giáo</a></li>
+                <li><a href="../kythuat/kythuat.html">Kỹ thuật</a></li>
+                <li><a href="../ungdung/ungdung.html">Ứng dụng</a></li>
             </ul>
-          </nav>
-        </div>
-      </div>
+        </nav>
     </header>
 
-    <section class="aboutMe__section">
-      <div class="aboutMe__container">
-        <div class="aboutMe__avatar">
-          <img
-            src="gioithieu-assets/images/avatar.jpg"
-            alt="avatar Tran Hoang Giang"
-          />
+    <main class="container content-page">
+        <div class="profile-section">
+            <img src="../assets/images/avatar.jpg" alt="Tran Hoang Giang Avatar" class="profile-avatar">
+            <div class="profile-info">
+                <h1>TRẦN HOÀNG GIANG</h1>
+                <p class="profile-titles">IT Graduate • English Graduate • Master's Student in IT</p>
+            </div>
+            <p>Hello! I am currently living in Bien Hoa.</p>
+            <p>I hold a Bachelor's degree in Information Technology and another in English Studies. I am now pursuing a Master's degree in Information Technology.</p>
+            <p>I have strong passion for technology, teaching, and continuous learning.</p>
         </div>
 
-        <div class="aboutMe__content_container">
-          <h1 class="section__title">About Me</h1>
-          <p>
-            Hello! I am currently living in Bien Hoa. 
-            I hold a Bachelor's degree
-            in Information Technology and another in English Studies. I am now
-            pursuing a Master's degree in Information Technology. I have strong
-            passion for technology, teaching, and continuous learning.
-          </p>
+        <div class="skills-section">
+            <h2>Key Skills & Certifications</h2>
+            <ul class="skills-list">
+                <li>Computer Networking: CCNA, CCNP</li>
+                <li>Microsoft Systems: MCSA</li>
+                <li>Experience: Consulting, design, supervision, maintenance, construction of network systems & IT Solutions</li>
+                <li>Language : English communication</li>
+            </ul>
         </div>
-      </div>
-    </section>
 
-      
- <section class="projects_container">
-      <h2 class="section__title">My Skills</h2>
-      <p class="section__description">
-        Some My Skills I have myself.
-      </p>
-      
-    <section class="skills__container">
-        <div class="container skills__grid_container">
-        <div class="skills__grid_item">
-          <div class="skills__grid_item_header">
-        <div>
-          <img src="gioithieu-assets/icons/C.svg" alt="backend icon" />
-          
-          <h2>Backend Development</h2>
-        </div>
+        <section class="contact-section">
+    <div class="contact-container">
+        <h1 class="section__title">Contact Me</h1>
         <p>
-          Familiar with server-side development using Node.js and Express. Experience working with RESTful APIs and database integration.
-        </p>
-      </div>
-        </div>
-
-        <div class="skills__grid_item">
-          <div class="skills__grid_item_header">
-            <div>
-              <img src="gioithieu-assets/icons/css.svg" alt="web dev icon" />
-              <h2>/DevOps & Networking</h2>
-            </div>
-            <p>
-              Solid understanding of computer networking fundamentals, Linux
-              system administration, and basic knowledge of CI/CD pipelines.
-            </p>
-          </div>
-        </div>
-
-        <div class="skills__grid_item">
-          <div class="skills__grid_item_header">
-            <div>
-              <img
-                src="gioithieu-assets/icons/node-js.svg"
-                alt="frontend icon"
-              />
-              <h2>1 Frontend Development</h2>
-            </div>
-            <p>
-              Experienced in building user interfaces using HTML, CSS,
-             library.
-            </p>
-          </div>
-        </div>
-
-        <div class="skills__grid_item">
-          <div class="skills__grid_item_header">
-            <div>
-              <img
-                src="gioithieu-assets/icons/html.svg"
-                alt="frontend icon"
-              />
-              <h2>Frontend Development</h2>
-            </div>
-            <p>
-              Experienced in building user interfaces using HTML, CSS,
-             library.
-            </p>
-          </div>
-        </div>
-
-         <div class="skills__grid_item">
-          <div class="skills__grid_item_header">
-            <div>
-              <img
-                src="gioithieu-assets/icons/postgresql.svg"
-                alt="frontend icon"
-              />
-              <h2>Network</h2>
-            </div>
-            <p>
-              Experienced in building user interfaces  networking
-            </p>
-          </div>
-        </div> 
-       
-        <div class="skills__grid_item">
-          <div class="skills__grid_item_header">
-            <div>
-              <img
-                src="gioithieu-assets/icons/react.svg"
-                alt="f icon"
-              />
-              <h2>6 Network</h2>
-            </div>
-            <p>
-              Experienced in building user interfaces  networking
-            </p>
-          </div>
-        </div> 
-
-      </div>
-    </section>
-
-    <section class="projects_container">
-      <h2 class="section__title">Featured Projects</h2>
-      <p class="section__description">
-        Some personal products and projects I have developed and designed myself.
-      </p>
-
-      <div class="projects__cards_container">
-        <a
-          href="https://github.com/sissyMai/mtikcode-simple-portfolio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects_cards">
-            <div class="projects__cards_wrapper">
-              <img
-                src="gioithieu-assets/images/project1.jpg"
-                alt="project1"
-                class="projects__cards_img"
-              />
-            </div>
-            <div class="projects__cards_titles">
-              <h4>Project 1</h4>
-              <h3>Web Design</h3>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://github.com/sissyMai/mtikcode-simple-portfolio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects_cards">
-            <div class="projects__cards_wrapper">
-              <img
-                src="gioithieu-assets/images/project2.jpg"
-                alt="project1"
-                class="projects__cards_img"
-              />
-            </div>
-            <div class="projects__cards_titles">
-              <h4>Project 2</h4>
-              <h3>Web Design</h3>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://github.com/sissyMai/mtikcode-simple-portfolio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects_cards">
-            <div class="projects__cards_wrapper">
-              <img
-                src="gioithieu-assets/images/project3.jpg"
-                alt="project1"
-                class="projects__cards_img"
-              />
-            </div>
-            <div class="projects__cards_titles">
-              <h4>Project 3</h4>
-              <h3>Web Design</h3>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects_cards">
-            <div class="projects__cards_wrapper">
-              <img
-                src="gioithieu-assets/images/project4.jpg"
-                alt="project1"
-                class="projects__cards_img"
-              />
-            </div>
-            <div class="projects__cards_titles">
-              <h4>Project 4</h4>
-              <h3>Web Design</h3>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects_cards">
-            <div class="projects__cards_wrapper">
-              <img
-                src="gioithieu-assets/images/project5.jpg"
-                alt="project1"
-                class="projects__cards_img"
-              />
-            </div>
-            <div class="projects__cards_titles">
-              <h4>Project 5</h4>
-              <h3>Enterprise Website Design</h3>
-            </div>
-          </div>
-        </a>
-
-        <a
-          href="https://"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="projects_cards">
-            <div class="projects__cards_wrapper">
-              <img
-                src="gioithieu-assets/images/project6.jpg"
-                alt="project1"
-                class="projects__cards_img"
-              />
-            </div>
-            <div class="projects__cards_titles">
-              <h4>Project 6</h4>
-              <h3>Web Design</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section class="contact-section">
-      <div class="contact-container">
-         <h1 class="section__title">Contact Me</h1>
-        <p>
-          Feel free to reach out to me via email or connect with me on social
-          media.
+            Feel free to reach out to me via email or connect with me on social
+            media.
         </p>
         <p>Email: <a href="mailto:tranhoanggiang@gmail.com">tranhoanggiang@gmail.com</a></p>
         <p>
-          You can also follow my **Chuyentrangian** Youtube channel to watch the
-          latest videos. Just scan this QR code with your phone!
+            You can also follow my **Chuyentrangian** Youtube channel to watch the
+            latest videos. Just scan this QR code with your phone!
         </p>
         <div class="qr-code-wrapper">
-    <img src="../assets/images/qr-youtube.jpg" alt="QR Code Youtube Chuyen Tran Gian" class="qr-code-image" />
-</div>
-    </section>
+            <img src="../assets/images/qr-youtube.jpg" alt="QR Code Youtube Chuyen Tran Gian" class="qr-code-image" />
+        </div>
+    </div>
+</section>
+    </main>
 
     <footer>
-      <div class="container">
-        <p>2024 © Tran Hoang Giang</p>
-      </div>
+	<img src="../assets/images/logo2.jpg" alt="Logo Footer" class="logo-footer">        <p>&copy; 2024 Giang Tran Hoang. All Rights Reserved.</p>
     </footer>
-  </body>
+</body>
 </html>

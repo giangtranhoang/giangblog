@@ -608,3 +608,56 @@ footer {
     border: 0;
 }
 
+/* Styles cho phần Contact mới */
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--background-color);
+    margin-top: 50px;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-section .section__title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    color: var(--light-text-color);
+    line-height: 1.6;
+}
+
+.contact-section a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.qr-code-wrapper {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-code-image {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
