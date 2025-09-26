@@ -320,10 +320,8 @@ body {
 }
 
 .article-image {
-    width: 100%;
-    max-height: 400px;
-    height: auto;
-    object-fit: cover;
+     width: 100%;
+    height: auto; /* Giữ nguyên tỷ lệ ảnh */
     border-radius: var(--border-radius);
     margin-bottom: 40px;
     box-shadow: var(--box-shadow);
