@@ -685,7 +685,9 @@ footer {
 }
 
 .center-verse {
-    text-align: center !important; ; /* Lệnh căn giữa văn bản theo chiều ngang */
+    text-align: center !important; 
     margin: 10px 0; /* Có thể thêm margin để tạo khoảng cách */
 }
+
+
 
