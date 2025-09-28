@@ -661,3 +661,31 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+/* Trong style.css */
+
+.article-meta {
+    /* Căn giữa văn bản bên trong phần tử <p> theo chiều ngang */
+    text-align: center; 
+    /* Bạn có thể muốn thêm một chút lề trên/dưới cho đẹp mắt */
+    margin: 10px 0;
+    /* Có thể làm cho chữ hơi nghiêng hoặc thay đổi màu nếu cần */
+    /* font-style: italic; */
+    /* color: var(--light-text-color); */
+}
+
+
+.contact-info {
+    /* Lệnh căn giữa văn bản theo chiều ngang */
+    text-align: center; 
+    /* Có thể thêm các style khác cho nổi bật */
+    font-weight: bold;
+    margin: 20px 0; /* Thêm lề trên/dưới cho dễ nhìn */
+    font-size: 1.1em;
+    color: var(--primary-color); /* Ví dụ: đổi màu cho nổi bật */
+}
+
+.center-verse {
+    text-align: center !important; ; /* Lệnh căn giữa văn bản theo chiều ngang */
+    margin: 10px 0; /* Có thể thêm margin để tạo khoảng cách */
+}
+
